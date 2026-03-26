@@ -41,6 +41,12 @@ python seed.py
 uvicorn app.main:app --reload --port 8000
 ```
 
+run using docker
+```
+cd "/Users/rohan/Downloads/ncaremd project"
+docker compose up -d --build db backend
+```
+
 - Health: `GET http://localhost:8000/api/health`
 - Swagger UI: `http://localhost:8000/api/docs`
 - ReDoc: `http://localhost:8000/api/redoc`
